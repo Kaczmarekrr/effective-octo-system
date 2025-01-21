@@ -1,7 +1,9 @@
-cmake_minimum_required(VERSION 2.8)
-project( multi_cv2 )
-set(OpenCV_DIR "/home/kaczmarekrr/repos/build")
-find_package( OpenCV REQUIRED )
-include_directories( ${OpenCV_INCLUDE_DIRS} )
-add_executable( multi_cv2 main.cpp )
-target_link_libraries( multi_cv2 ${OpenCV_LIBS} )
+cmake_minimum_required(VERSION 3.15)
+project(Display CXX)
+
+find_package(tensorflowlite REQUIRED)
+find_package(OpenCV REQUIRED)
+
+add_executable(Display src/upcoming_ver.cpp)
+
+target_link_libraries(Display PRIVATE tensorflow::tensorflowlite opencv::opencv)

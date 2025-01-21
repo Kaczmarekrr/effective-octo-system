@@ -72,3 +72,14 @@ int main(int argc, char *argv[])
     th2.join();
     return 0;
 }
+
+
+// Next steps
+//
+// 1. Add Mediapipe and possible TFlite to the project
+// 2. Run Mediapipe landmarks if correct - This will be a good part of advancemnt
+// 3. Prepare to get values around markers 
+// 4. Add kissFFT
+// 5. Get fft (maybe filtering too?)
+// 6. Get bpm values
+//
